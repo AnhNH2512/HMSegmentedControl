@@ -664,7 +664,7 @@
     self.scrollView.contentInset = UIEdgeInsetsZero;
     self.scrollView.frame = CGRectMake(0, 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame));
     
-    if ([self sectionCount] > 0) {
+    if ([self sectionCount] > 0 && !self.isAlignmentLeft) {
         self.segmentWidth = self.frame.size.width / [self sectionCount];
     }
     
