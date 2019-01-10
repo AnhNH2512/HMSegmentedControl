@@ -250,6 +250,9 @@ typedef NS_ENUM(NSInteger, HMSegmentedControlImagePosition) {
 /**
  Default is YES. Set to NO to disable animation during user selection.
  */
+
+@property (nonatomic) BOOL isAlignmentLeft;
+
 @property (nonatomic) BOOL shouldAnimateUserSelection;
 
 - (id)initWithSectionTitles:(NSArray<NSString *> *)sectiontitles;
